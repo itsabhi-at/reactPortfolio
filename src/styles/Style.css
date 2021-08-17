@@ -1,0 +1,740 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #5aa07f;
+}
+
+h2,
+h3 {
+  font-size: 3rem;
+  font-family: "work-sans", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: "work-sans", sans-serif;
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+button {
+  background: transparent;
+  border: 2px solid #fff5c3;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  color: #fff5c3;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #fff5c3;
+  color: #505050;
+}
+
+span {
+  color: #fff5c3;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #fff5c3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #505050;
+}
+
+.navbar {
+  padding: 0rem 5rem;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.navbar svg {
+  height: 100px;
+  width: 50px;
+}
+
+.navbar .navlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar h3 {
+  padding-right: 1rem;
+  font-size: 1.1rem;
+}
+
+.about {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0rem 5rem;
+}
+
+.about .description {
+  padding-top: 7rem;
+}
+
+.about .description p {
+  padding: 2rem 0rem;
+  text-align: left;
+}
+
+.about .image #bulb {
+  -webkit-animation: bulb 2s infinite linear alternate;
+          animation: bulb 2s infinite linear alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes bulb {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+}
+
+@keyframes bulb {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+}
+
+.about .image #designProcess {
+  -webkit-animation: dp 2s infinite linear alternate;
+          animation: dp 2s infinite linear alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes dp {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+}
+
+@keyframes dp {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+}
+
+.about .image #screwOne,
+.about .image #screwTwo,
+.about .image #screwThree {
+  -webkit-animation: screw 2s infinite linear;
+          animation: screw 2s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes screw {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes screw {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+.about .image #ballOne,
+.about .image #ballThree,
+.about .image #ballFour {
+  -webkit-animation: ball 2s infinite linear alternate;
+          animation: ball 2s infinite linear alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes ball {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+    opacity: 1;
+  }
+}
+
+@keyframes ball {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+    opacity: 1;
+  }
+}
+
+.about .image #ballTwo,
+.about .image #ballFive,
+.about .image #ballSix {
+  -webkit-animation: ball 1s infinite linear alternate;
+          animation: ball 1s infinite linear alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@keyframes ball {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+}
+
+.about .image #notebookTicks {
+  -webkit-animation: ticks 2s infinite linear alternate;
+          animation: ticks 2s infinite linear alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes ticks {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  to {
+    opacity: 0.8;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+
+@keyframes ticks {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  to {
+    opacity: 0.8;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+
+.about .image #cupStraw {
+  -webkit-animation: straw 5s infinite linear alternate;
+          animation: straw 5s infinite linear alternate;
+  -webkit-transform-origin: 10%;
+          transform-origin: 10%;
+  transform-box: fill-box;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes straw {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes straw {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.about .image #codeBars {
+  -webkit-animation: cl 2s infinite linear alternate;
+          animation: cl 2s infinite linear alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes cl {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  to {
+    overflow: hidden;
+    opacity: 0.8;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes cl {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  to {
+    overflow: hidden;
+    opacity: 0.8;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.about .image #cupEyes {
+  -webkit-animation: eyes 2s infinite linear alternate;
+          animation: eyes 2s infinite linear alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes eyes {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+}
+
+@keyframes eyes {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+}
+
+.about .image #shadow {
+  -webkit-animation: shadow 0.6s ease-in forwards alternate;
+          animation: shadow 0.6s ease-in forwards alternate;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  opacity: 0;
+}
+
+@-webkit-keyframes shadow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shadow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.services {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 5rem;
+}
+
+.services .cards {
+  height: 80vh;
+  width: 70vw;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 15rem 15rem 15rem;
+      grid-template-columns: 15rem 15rem 15rem;
+  -ms-grid-rows: 18rem 18rem 18rem;
+      grid-template-rows: 18rem 18rem 18rem;
+      grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+  grid-gap: 1.5rem;
+}
+
+.services .cards .card1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card1;
+}
+
+.services .cards .card2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: card2;
+}
+
+.services .cards .card3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: card3;
+}
+
+.services .cards .card4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card4;
+}
+
+.services .cards .card5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: card5;
+}
+
+.services .cards .card6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: card6;
+}
+
+.services .cards .card1,
+.services .cards .card2,
+.services .cards .card3,
+.services .cards .card4,
+.services .cards .card5,
+.services .cards .card6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 4px -1px black;
+  box-shadow: 2px 2px 4px -1px black;
+}
+
+.services .cards svg {
+  height: 150px;
+  width: 100px;
+}
+
+.services .cards h2 {
+  font-size: 1.5rem;
+  color: #fff5c3;
+}
+
+.services .cards p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0rem 0.5rem;
+}
+
+.socialright {
+  position: fixed;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  bottom: 10vh;
+  right: 6rem;
+}
+
+.socialright::after {
+  content: "";
+  position: fixed;
+  height: 15vh;
+  bottom: -6.5vh;
+  width: 2px;
+  right: -5vw;
+  background-color: #fff5c3;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
+.socialright a {
+  font-size: 1.3rem;
+  font-family: "work-sans";
+}
+
+.socialright a:hover {
+  color: #fff5c3;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
+.left {
+  position: fixed;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  bottom: 25vh;
+  left: 6rem;
+}
+
+.left svg {
+  height: 25px;
+  width: 25px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left svg:hover {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+.left::after {
+  content: "";
+  position: fixed;
+  height: 15vh;
+  bottom: -6vh;
+  width: 2px;
+  right: -5vw;
+  background-color: #fff5c3;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
+.left a {
+  margin: 0rem 0.5rem;
+}
+
+.left a:hover {
+  fill: #505050;
+}
+
+.portfolio {
+  margin: 0rem 5rem;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30vh;
+}
+
+.heading h3 {
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  color: #fff5c3;
+}
+
+.heading h5 {
+  color: #fff5c3;
+  font-family: "work-sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.heading p {
+  font-size: 1.2rem;
+  word-spacing: 0.4rem;
+  margin: 1rem 0rem;
+  color: #fff5c3;
+}
+
+.works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works .card {
+  background-color: #fff5c3;
+  padding: 2rem 2rem;
+  height: 450px;
+  width: 330px;
+  margin: 4rem 3rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.works .card:hover {
+  -webkit-transform: translateY(-5px) scale(1.005) translateZ(0);
+          transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.works img {
+  pointer-events: none;
+  height: 320px;
+  width: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.works h3 {
+  pointer-events: none;
+  width: 100%;
+  text-align: left;
+  color: #292c2c;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.works h4 {
+  pointer-events: none;
+  width: 100%;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 14px;
+  color: #292c2c;
+  font-family: "work-sans", sans-serif;
+}
+/*# sourceMappingURL=Style.css.map */

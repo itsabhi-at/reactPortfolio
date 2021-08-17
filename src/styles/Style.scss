@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #5aa07f;
+}
+h2,
+h3 {
+  font-size: 3rem;
+  font-family: "work-sans", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+p {
+  font-size: 1.5rem;
+  font-family: "work-sans", sans-serif;
+  font-weight: lighter;
+  color: #ffffff;
+}
+button {
+  background: transparent;
+  border: 2px solid #fff5c3;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  color: #fff5c3;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  &:hover {
+    background: #fff5c3;
+    color: #505050;
+  }
+}
+span {
+  color: #fff5c3;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #fff5c3;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #505050;
+  }
+}
+@import "./aboutus";
+@import "./portfolio";

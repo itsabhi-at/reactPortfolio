@@ -1,0 +1,337 @@
+.navbar {
+  padding: 0rem 5rem;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  svg {
+    height: 100px;
+    width: 50px;
+  }
+  .navlinks {
+    display: flex;
+  }
+  h3 {
+    padding-right: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+.about {
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0rem 5rem;
+  .description {
+    padding-top: 7rem;
+    p {
+      padding: 2rem 0rem;
+      text-align: left;
+    }
+  }
+  .image {
+    #bulb {
+      animation: bulb 2s infinite linear alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+      animation-delay: 1s;
+      @keyframes bulb {
+        from {
+          transform: translateY(0%);
+        }
+        to {
+          transform: translateY(-40%);
+        }
+      }
+    }
+    #designProcess {
+      animation: dp 2s infinite linear alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+      animation-delay: 1s;
+      @keyframes dp {
+        from {
+          transform: translateX(0%);
+        }
+        to {
+          transform: translateX(-40%);
+        }
+      }
+    }
+    #screwOne,
+    #screwTwo,
+    #screwThree {
+      animation: screw 2s infinite linear;
+      transform-origin: center;
+      transform-box: fill-box;
+      animation-delay: 1s;
+      @keyframes screw {
+        from {
+          transform: rotateZ(0deg);
+        }
+        to {
+          transform: rotateZ(360deg);
+        }
+      }
+    }
+    #ballOne,
+    #ballThree,
+    #ballFour {
+      animation: ball 2s infinite linear alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+      animation-delay: 1s;
+      @keyframes ball {
+        from {
+          transform: translateX(0%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(-200%);
+          opacity: 1;
+        }
+      }
+    }
+    #ballTwo,
+    #ballFive,
+    #ballSix {
+      animation: ball 1s infinite linear alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+      animation-delay: 1s;
+      @keyframes ball {
+        from {
+          transform: translateX(0%);
+        }
+        to {
+          transform: translateX(300%);
+        }
+      }
+    }
+    #notebookTicks {
+      animation: ticks 2s infinite linear alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+      animation-delay: 1s;
+      @keyframes ticks {
+        from {
+          opacity: 0;
+          transform: translateX(-20%);
+        }
+        to {
+          opacity: 0.8;
+          transform: translateX(10%);
+        }
+      }
+    }
+    #cupStraw {
+      animation: straw 5s infinite linear alternate;
+      transform-origin: 10%;
+      transform-box: fill-box;
+      animation-delay: 1s;
+      @keyframes straw {
+        from {
+          transform: rotateY(0deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+    }
+    #codeBars {
+      animation: cl 2s infinite linear alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+      animation-delay: 1s;
+
+      @keyframes cl {
+        from {
+          opacity: 0;
+          transform: translateX(-20%);
+        }
+        to {
+          overflow: hidden;
+          opacity: 0.8;
+          transform: translateX(0%);
+        }
+      }
+    }
+    #cupEyes {
+      animation: eyes 2s infinite linear alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+      animation-delay: 1s;
+      @keyframes eyes {
+        from {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+        to {
+          opacity: 0;
+          transform: translateY(-40%);
+        }
+      }
+    }
+    // #sqaureThree,
+    // #sqaureOne,
+    // #sqaureTwo {
+    //   animation: square 2s infinite linear;
+    //   transform-origin: center;
+    //   transform-box: fill-box;
+    //   animation-delay: 1s;
+    //   @keyframes square {
+    //     from {
+    //       transform: rotateZ(0deg);
+    //     }
+    //     to {
+    //       transform: rotateZ(360deg);
+    //     }
+    //   }
+    // }
+    #shadow {
+      animation: shadow 0.6s ease-in forwards alternate;
+      animation-iteration-count: 1;
+      animation-delay: 0.4s;
+      transform-origin: center;
+      transform-box: fill-box;
+      opacity: 0;
+      @keyframes shadow {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.services {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 5rem;
+
+  .cards {
+    height: 80vh;
+    width: 70vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 15rem 15rem 15rem;
+    grid-template-rows: 18rem 18rem 18rem;
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6";
+    grid-gap: 1.5rem;
+
+    .card1 {
+      grid-area: card1;
+    }
+    .card2 {
+      grid-area: card2;
+    }
+    .card3 {
+      grid-area: card3;
+    }
+    .card4 {
+      grid-area: card4;
+    }
+    .card5 {
+      grid-area: card5;
+    }
+    .card6 {
+      grid-area: card6;
+    }
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      overflow: hidden;
+      -webkit-box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 1);
+      box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 1);
+    }
+    svg {
+      height: 150px;
+      width: 100px;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #fff5c3;
+    }
+    p {
+      text-align: center;
+      font-size: 1rem;
+      padding: 0rem 0.5rem;
+    }
+  }
+}
+
+.socialright {
+  position: fixed;
+  transform-origin: right;
+  transform: rotateZ(90deg);
+  bottom: 10vh;
+  right: 6rem;
+  // border: 2px solid red;
+  &::after {
+    content: "";
+    position: fixed;
+    height: 15vh;
+    bottom: -6.5vh;
+    width: 2px;
+    right: -5vw;
+    background-color: #fff5c3;
+    transform: rotateZ(-90deg);
+  }
+  a {
+    font-size: 1.3rem;
+    font-family: "work-sans";
+
+    &:hover {
+      color: #fff5c3;
+      transform: translateX(-200%);
+    }
+  }
+}
+.left {
+  position: fixed;
+  transform-origin: left;
+  transform: rotateZ(90deg);
+  bottom: 25vh;
+  left: 6rem;
+  // border: 2px solid red;
+  svg {
+    height: 25px;
+    width: 25px;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: translateX(-20%);
+    }
+  }
+  &::after {
+    content: "";
+    position: fixed;
+    height: 15vh;
+    bottom: -6vh;
+    width: 2px;
+    right: -5vw;
+    background-color: #fff5c3;
+    transform: rotateZ(-90deg);
+  }
+  a {
+    margin: 0rem 0.5rem;
+    &:hover {
+      fill: #505050;
+    }
+  }
+}
